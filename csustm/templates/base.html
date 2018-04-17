@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<!--[if IE 7]> <html class="no-js ie7 oldie" lang="en-US"> <![endif]-->
+<!--[if IE 8]> <html class="no-js ie8 oldie" lang="en-US"> <![endif]-->
+<!--[if gt IE 8]><!-->
+<html lang="eng">
+{% load staticfiles %}
+    <head>
+        <!-- TITLE OF SITE -->
+        <title>{% block title %}Home{% endblock %}</title>
+
+        <!-- Meta -->
+        <meta charset="utf-8">
+        <meta name="description" content="app landing page template" />
+        <meta name="keywords" content="app, landing page, bootstrap" />
+        <meta name="developer" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+        <!-- FAV AND ICONS   -->
+        {% block link_icons %}
+
+        {% endblock %}
+        <!-- GOOGLE FONTS -->
+        <link href="//fonts.googleapis.com/css?family=Montserrat:300,400,500,700%7cVarela+Round" rel="stylesheet">
+
+        <!-- FONT ICONS -->
+        <link rel="stylesheet" href="{% static 'assets/icons/fontawesome-all.min.css' %}">
+
+        <!-- Custom Icon Font -->
+        <link rel="stylesheet" href="{% static 'assets/font/flaticon.css' %}">
+        <!-- Bootstrap-->
+        <link rel="stylesheet" href="{% static 'assets/plugins/css/bootstrap.min.css' %}">
+        <!-- Animation -->
+        <link rel="stylesheet" href="{% static 'assets/plugins/css/animate.css' %}">
+        <!-- owl -->
+        <link rel="stylesheet" href="{% static 'assets/plugins/css/owl.css' %}">
+        <!-- selectize -->
+        <link rel="stylesheet" href="{% static 'assets/plugins/css/selectize.css' %}">
+        <link rel="stylesheet" href="{% static 'assets/plugins/css/selectize.bootstrap3.css' %}">
+        <!-- Fancybox-->
+        <link rel="stylesheet" href="{% static 'assets/plugins/css/jquery.fancybox.min.css' %}">
+        <!--dropdown -->
+        <link rel="stylesheet" href="{% static 'assets/plugins/css/bootstrap-dropdownhover.min.css' %}">
+        <!-- mobile nav-->
+    {% block extra_base_style %}
+
+    {% endblock %}
+    </head>
+    <body>
+
+     {% block content %}
+
+     {% endblock %}
+
+
+
+        <!--
+        |========================
+        |      Script
+        |========================
+        -->
+        <!-- jquery -->
+        <script src="{% static 'assets/plugins/js/jquery-1.11.3.min.js' %}"></script>
+        <!-- Bootstrap -->
+        <script src="{% static 'assets/plugins/js/bootstrap.min.js' %}"></script>
+        <!-- mean menu nav-->
+        <script src="{% static 'assets/plugins/js/meanmenu.js' %}"></script>
+        <!-- ajaxchimp -->
+        <script src="{% static 'assets/plugins/js/jquery.ajaxchimp.min.js' %}"></script>
+        <!-- wow -->
+        <script src="{% static 'assets/plugins/js/wow.min.js' %}"></script>
+        <!-- Owl carousel-->
+        <script src="{% static 'assets/plugins/js/owl.carousel.js' %}"></script>
+        <!--dropdownhover-->
+        <script src="{% static 'assets/plugins/js/bootstrap-dropdownhover.min.js' %}"></script>
+        <!--jquery-ui.min-->
+        <script src="{% static 'assets/plugins/js/bars.js' %}"></script>
+        <!--validator -->
+        <script src="{% static 'assets/plugins/js/validator.min.js' %}"></script>
+        <!--smooth scroll-->
+        <script src="{% static 'assets/plugins/js/smooth-scroll.js' %}"></script>
+        <!-- Fancybox js-->
+        <script src="{% static 'assets/plugins/js/jquery.fancybox.min.js' %}"></script>
+        <!-- fitvids -->
+        <script src="{% static 'assets/plugins/js/jquery.fitvids.js' %}"></script>
+        <!-- SELECTIZE-->
+        <script src="{% static 'assets/plugins/js/standalone/selectize.js' %}"></script>
+        <!-- isotope js-->
+        <script src="{% static 'assets/plugins/js/isotope.pkgd.js' %}"></script>
+        <script src="{% static 'assets/plugins/js/packery-mode.pkgd.js' %}"></script>
+        <!-- progressbar-->
+        <script src="{% static 'assets/plugins/js/progressbar.min.js' %}"></script>
+        <!-- inview -->
+        <script src="{% static 'assets/plugins/js/jquery.inview.min.js' %}"></script>
+        <!---->
+        {% block extra_base_scripts %}
+
+        {% endblock %}
+        <!-- init -->
+        <script src="{% static 'assets/js/init.js' %}"></script>
+
+    </body>
+</html>

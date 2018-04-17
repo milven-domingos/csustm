@@ -1,0 +1,263 @@
+{% extends 'base.html' %}
+{% load staticfiles %}
+ {% block link_icons %}
+        <link rel="icon" href="{% static 'assets/images/favicon.png' %}" sizes="32x32" />
+        <link rel="icon" href="{% static 'assets/images/apple-icon-192.png' %}" sizes="192x192"/>
+        <link rel="apple-touch-icon-precomposed" href="{% static 'assets/images/apple-icon-180.png' %}" />
+        {% endblock %}
+{% block extra_base_style %}
+   <link rel="stylesheet" href="{% static 'assets/plugins/css/meanmenu.css' %}">
+
+        <!-- COUSTOM CSS link  -->
+        <link rel="stylesheet" href="{% static 'assets/less/style.css' %}">
+        <link rel="stylesheet" href="{% static 'assets/less/responsive.css' %}">
+
+        <!--[if lt IE 9]>
+            <script src="js/plagin-js/html5shiv.js"></script>
+            <script src="js/plagin-js/respond.min.js"></script>
+        <![endif]-->
+{% endblock %}
+{% block content %}
+     <!--
+        |========================
+        |  HEADER
+        |========================
+        -->
+        <header class="xt-header">
+            <div class="xt-header-top">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-sm-6 uv-header-contact">
+                            <a href=""> <i class="fa fa-phone"></i>(519) - 875 - 9822</a>
+                            <a href=""> <i class="fa fa-envelope-o"></i>info@curricular.edu</a>
+                        </div>
+                        <div class="col-sm-6 uv-header-user">
+
+                             <a href=""><i class="fa fa-lock"></i>login</a>
+                            <div class="xt-header-search">
+                                <div id="besocial-header-right" class="">
+                                    <i class="fa fa-remove"></i>
+                                    <i class="fa fa-search"></i>
+                                </div>
+                                <div id="besocial-search-bar" class="">
+                                    <form class="besocial-topbar-searchbox">
+                                        <input type="text" class="besocial-topbar-searchtext" placeholder="Search..." name="search">
+                                        <input type="submit" class="fa-input" name="submit" value="Go">
+                                    </form>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="clearfix"></div>
+            <div class="xt-main-nav">
+                <nav class="navbar nav-scroll home-1">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-sm-4">
+                                <div class="uv-logo">
+                                    <a href="{% url 'homepage' %}">
+                                        <img src="{% static 'assets/images/univ-logo.png' %}" alt="" class="img-responsive">
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="col-sm-8 pull-right">
+                                <div class="navbar-header">
+                                    <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-action="#js-navbar-menu" aria-expanded="false">
+                                        <span aria-hidden="true" class="icon"></span>
+                                    </button>
+                                </div>
+                                <div class="collapse navbar-collapse" id="js-navbar-menu">
+                                    <ul class="nav navbar-nav ep-mobile-menu" id="navbar-nav">
+                                        <li class="dropdown xt-drop-nav">
+                                            <a href="" class="dropdown-toggle active" data-toggle="dropdown" data-hover="dropdown" data-animations="fadeInDown fadeInDown fadeInDown">
+                                                Home
+                                            </a>
+
+                                        </li>
+                                        <li class="dropdown xt-drop-nav">
+                                            <a href="" class="dropdown-toggle" data-toggle="dropdown" data-hover="dropdown" data-animations="fadeInDown fadeInDown fadeInDown">
+                                                Course
+                                            </a>
+                                            <ul class="dropdown-menu">
+                                                <li><a href="course-listing.html">Course List</a></li>
+                                                <li><a href="course-details.html">Single Course</a></li>
+                                                <li><a href="course-details-2.html">Single Course 2</a></li>
+                                                <li><a href="course-archive.html">Course Archive</a></li>
+                                                <li><a href="course-quiz.html">Course Quiz</a></li>
+                                            </ul>
+                                        </li>
+                                        <li class="dropdown xt-drop-nav">
+                                            <a href="" class="dropdown-toggle" data-toggle="dropdown" data-hover="dropdown" data-animations="fadeInDown fadeInDown fadeInDown">
+                                                Profile
+                                            </a>
+                                            <ul class="dropdown-menu">
+                                                <li><a href="dashboard-my-profile.html">Profile</a></li>
+                                                <li><a href="dashboard-classes.html">Classes</a></li>
+                                                <li><a href="dashboard-courses.html">Courses</a></li>
+                                                <li><a href="dashboard-fav-courses.html">Favorite Course</a></li>
+                                                <li><a href="dashboard-privacy-setting.html">Privacy Setting</a></li>
+                                                <li><a href="dashboard-profile-setting.html">Profile Setting</a></li>
+                                            </ul>
+                                        </li>
+                                        <li class="dropdown xt-drop-nav">
+                                            <a href="" class="dropdown-toggle" data-toggle="dropdown" data-hover="dropdown" data-animations="fadeInDown fadeInDown fadeInDown">
+                                                Blog
+                                            </a>
+                                            <ul class="dropdown-menu">
+                                                <li><a href="blog.html">Blog Page</a></li>
+                                                <li><a href="blog-single.html">Blog Single</a></li>
+                                            </ul>
+                                        </li>
+                                        <li class="dropdown xt-drop-nav">
+                                            <a href="" class="dropdown-toggle" data-toggle="dropdown" data-hover="dropdown" data-animations="fadeInDown fadeInDown fadeInDown">
+                                                Features
+                                            </a>
+                                            <ul class="dropdown-menu">
+                                                <li><a href="about.html">About</a></li>
+                                                <li><a href="services.html">Service</a></li>
+                                                <li><a href="teacher-details.html">Teacher Details</a></li>
+                                                <li><a href="classes.html">Classes Time Table</a></li>
+                                                <li><a href="not-found.html">404</a></li>
+                                                <li><a href="login-reg.html">Login & Registration</a></li>
+                                            </ul>
+                                        </li>
+                                        <li><a href="contact.html">Contact</a></li>
+                                        <li><a href="{% url 'dashboard' %}">Dashboard</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </nav><!-- /.navbar -->
+            </div>
+            <!-- Mobile Menu-->
+            <div class="menu-spacing visible-xs nav-scroll">
+                <div class="mobile-menu-area visible-xs visible-sm">
+                    <div class="mobile-menu">
+                        <nav id="mobile-menu-active">
+                            <ul class="main">
+                                <li class="active"><a class="main-a" href="#">Home</a>
+                                    <ul>
+                                        <li><a href="index-1.html">Home 1</a></li>
+                                    </ul>
+                                </li>
+                                <li><a class="main-a" href="">Courses</a>
+                                    <ul>
+                                        <li><a href="course-listing.html">Course List</a></li>
+                                        <li><a href="course-details.html">Single Course</a></li>
+                                        <li><a href="course-details-2.html">Single Course 2</a></li>
+                                        <li><a href="course-archive.html">Course Archive</a></li>
+                                        <li><a href="course-quiz.html">Course Quiz</a></li>
+                                    </ul>
+                                </li>
+                                <li><a class="main-a" href="">Features</a>
+                                    <ul>
+                                        <li><a href="not-found.html">404</a></li>
+                                        <li><a href="login-reg.html">Login & Registration</a></li>
+                                        <li><a href="teacher-details.html">Team Details</a></li>
+                                        <li><a href="classes.html">Classes</a></li>
+                                        <li><a href="about.html">About</a></li>
+                                        <li><a href="services.html">Service</a></li>
+                                    </ul>
+                                </li>
+                                <li><a class="main-a" href="">Profile</a>
+                                    <ul>
+                                        <li><a href="dashboard-my-profile.html">Profile</a></li>
+                                        <li><a href="dashboard-classes.html">Classes</a></li>
+                                        <li><a href="dashboard-courses.html">Courses</a></li>
+                                        <li><a href="dashboard-fav-courses.html">Favorite Course</a></li>
+                                        <li><a href="dashboard-privacy-setting.html">Privacy Setting</a></li>
+                                        <li><a href="dashboard-profile-setting.html">Profile Setting</a></li>
+                                    </ul>
+                                </li>
+                                <li><a class="main-a" href="">Blog</a>
+                                    <ul>
+                                        <li><a href="blog.html">Blog Page</a></li>
+                                        <li><a href="blog-single.html">Blog Single</a></li>
+                                    </ul>
+                                </li>
+                                <li><a class="main-a" href="contact.html">Contact</a></li>
+                            </ul>
+                        </nav>
+                    </div>
+                </div>
+            </div>
+        </header>
+    {% block home-base %}
+
+    {% endblock %}
+     <footer class="uv-footer footer-bg section-separator">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-3 col-sm-6 wow fadeInUp" data-wow-delay="0.2s">
+                        <div class="footer-item">
+                            <h6>Contact School</h6>
+                            <address>23621 15 Mile Rd #C104, Clinton MI, 48035, New York, USA</address>
+                            <ul>
+                                <li><a href=""><i class="fa fa-phone"></i>+1 (2) 345 6789</a></li>
+                                <li><a href=""><i class="fa fa-phone"></i>+1 (2) 345 6789</a></li>
+                                <li><a href=""><i class="fa fa-envelope-o"></i>contact@curricular.com</a></li>
+                            </ul>
+                            <ul class="social">
+                                <li><a href=""><i class="fa fa-facebook"></i></a></li>
+                                <li><a href=""><i class="fa fa-twitter"></i></a></li>
+                                <li><a href=""><i class="fa fa-dribbble"></i></a></li>
+                                <li><a href=""><i class="fa fa-linkedin"></i></a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-md-3 col-sm-6 wow fadeInUp" data-wow-delay="0.4s">
+                        <div class="footer-item uv-program">
+                            <h6>Our Programs</h6>
+                            <ul>
+                                <li><a href="">Architecture, Building & Planning</a></li>
+                                <li><a href="">Biological Sciences</a></li>
+                                <li><a href="">Business & Administrative Studies</a></li>
+                                <li><a href="">Computer Science</a></li>
+                                <li><a href="">Creative Arts & Design</a></li>
+                                <li><a href="">Medicine and Related Subjects</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-md-3 col-sm-6 wow fadeInUp" data-wow-delay="0.6s">
+                        <div class="footer-item">
+                            <h6>Our Resources</h6>
+                            <ul>
+                                <li><a href="">Student Resources</a></li>
+                                <li><a href="">Career Development</a></li>
+                                <li><a href="">Information Technology</a></li>
+                                <li><a href="">Diversity & Access</a></li>
+                                <li><a href="">Dining Services</a></li>
+                                <li><a href="">Housing & Residence Life</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-md-3 col-sm-6 wow fadeInUp" data-wow-delay="0.8s">
+                        <div class="footer-item">
+                            <h6>Newsletter</h6>
+                            <p>Enter your email and we'll send you more information of courses and scholarship.</p>
+                            <form class="uv-form footer-form">
+                                <div class="form-group relative">
+                                    <div class="relative">
+                                        <input type="text" class="form-control" placeholder="Email Address" required>
+                                    </div>
+                                </div>
+                                <div class="footer-subs-btn">
+                                    <button type="submit" class="btn btn-base" value="subscribe">Subcribe</button>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+                <hr class="f-hr">
+                <div class="row">
+                    <div class="uv-copyright center wow fadeInUp" data-wow-delay="0.5s">
+                        <p> © Copyright Milven Cossa 2018.</p>
+                    </div>
+                </div>
+            </div>
+        </footer>
+
+{% endblock %}

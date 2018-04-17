@@ -1,0 +1,537 @@
+{% extends "home_base.html" %}
+
+{% block home-base %}
+    {% load static %}
+    <!--|========================
+        |   SLIDER CONTENT
+        |========================
+        -->
+        <section class="header-slider header-slider-preloader" id="header-slider">
+            <div class="animation-slides owl-carousel owl-theme" id="animation-slide">
+                 <!--Slide 1-->
+                <div style="background-image:url({% static 'assets/images/course-bg.jpg'%})" class="item">
+                    <div class="slide-table">
+                        <div class="slide-tablecell">
+                            <div class="container">
+                                <div class="row">
+                                    <div class="col-md-7 col-xs-12">
+                                        <div class="slide-text">
+                                            <span>Learn what you love</span>
+                                            <h1>EDUCATION <br> NEED FOR BETTER LIFE</h1>
+                                            <p>Miker Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s</p>
+                                           <div class="slide-buttons">
+                                                <a href="#" class="slide-btn btn btn-base">Start Now</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                 <!--Slide 2-->
+                <div style="background-image:url({% static 'assets/images/home-2-bg.jpg'%})" class="item">
+                    <div class="slide-table">
+                        <div class="slide-tablecell">
+                            <div class="container">
+                                <div class="row">
+                                    <div class="col-md-7">
+                                        <div class="slide-text">
+                                            <span>BEST ONLINE LEARNING SYSTEM</span>
+                                            <h1>GET STARTED WITH ONLINE EDUCATION </h1>
+                                            <p>Miker Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s</p>
+                                           <div class="slide-buttons">
+                                                <a href="#" class="slide-btn btn btn-base">Download Now</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                 <!--Slide 3-->
+                <div style="background-image:url({% static 'assets/images/header-bg-1.jpg'%})" class="item">
+                    <div class="slide-table">
+                        <div class="slide-tablecell">
+                            <div class="container">
+                                <div class="row">
+                                    <div class="col-md-7">
+                                        <div class="slide-text">
+                                            <span>20 march 2017</span>
+                                           <h1>ARE YOU READY <br> TO APPLY?</h1>
+                                               <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore dolore</p>
+                                            <div class="slide-buttons">
+                                                <a href="#" class="slide-btn btn btn-base">Get Start Now</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+            <!-- Preloader -->
+            <div class="slider_preloader">
+                <div class="slider_preloader_status">&nbsp;</div>
+            </div>
+        </section>
+    <!--
+        |========================
+        |      Service
+        |========================
+        -->
+        <section class="uv-feature bg-2">
+            <div class="container">
+                <div class="row section-separator">
+                    <div class="col-sm-4">
+                        <div class="uv-join-tagline wow fadeInRight" data-wow-delay="0.2s">
+                            <h2><b>Smarter</b> way to go through your school</h2>
+                            <a href="" class="btn btn-base"> Join Today <i class="fa fa-long-arrow-right"></i></a>
+                        </div>
+                    </div>
+                    <div class="col-sm-8">
+                        <div class="uv-featured-icon wow fadeIn" data-wow-delay="0.2s">
+                            <div class="row">
+                                <ul>
+                                    <li class="col-sm-3 col-xs-6"><i class="fa flaticon-mortarboard-1"></i><span>The Open University</span></li>
+                                    <li class="col-sm-3 col-xs-6"><i class="fa flaticon-monitor"></i><span>Digital Education</span></li>
+                                    <li class="col-sm-3 col-xs-6"><i class="fa flaticon-light-bulb "></i><span>Technical Workshops</span></li>
+                                    <li class="col-sm-3 col-xs-6"><i class="fa flaticon-open-book"></i><span>Online Learning</span></li>
+                                </ul>
+                            </div>
+                            <h5>A private institution with a public purpose, Ransom Everglades combines
+                            rigorous college preparation.</h5>
+                        </div>
+                        <div class="featured-content">
+                            <div class="row">
+                                <div class="col-sm-6 wow fadeInRight" data-wow-delay="0.4s">
+                                    <p>Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                                    Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium.</p>
+                                </div>
+                                <div class="col-sm-6 wow fadeInLeft" data-wow-delay="0.4s">
+                                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                                    Ut enim ad minim veniam, quis nostrud exercitation dolore eu fugiat nulla pariatur. </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!--
+        |========================
+        | About
+        |========================
+        -->
+        <section class="uv-feature-2">
+            <div class="container">
+                <div class="row section-separator">
+                    <div class="col-sm-4 wow fadeInUp">
+                        <div class="uv-featured-post-title" data-wow-delay="0.2s">
+                            <h4>Best Online Certification</h4>
+                            <p>Lorem ipsum dolor sit amet</p>
+                        </div>
+                        <div class="featured-post-inner uv-hover-style">
+                            <img src="{% static 'assets/images/e1.jpg'%}" alt="" class="img-responsive">
+                            <div class="uv-post-inner-content">
+                                <h6>Bring Youth to Fun & Study</h6>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipi sicing elit, sed do eiusmod tempor
+                                incididunt ut labore et.dolore magna aliqua.</p>
+                                <a href="" class="btn btn-base">Read more</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-4 wow fadeInUp" data-wow-delay="0.4s">
+                        <div class="uv-featured-post-title">
+                            <h4>Student Life</h4>
+                            <p>Lorem ipsum dolor sit amet</p>
+                        </div>
+                        <div class="featured-post-inner uv-hover-style">
+                            <img src="{% static 'assets/images/e2.jpg'%}" alt="" class="img-responsive">
+                            <div class="uv-post-inner-content">
+                                <h6>Life is Like Riding a Bicycle</h6>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipi sicing elit, sed do eiusmod tempor
+                                incididunt ut labore et.dolore magna aliqua.</p>
+                                <a href="" class="btn btn-base">Read more</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-4 wow fadeInUp" data-wow-delay="0.6s">
+                        <div class="uv-featured-post-title">
+                            <h4>Notice BOARD</h4>
+                            <p>Lorem ipsum dolor sit amet</p>
+                        </div>
+                        <div class="featured-post-inner">
+                            <div class="uv-post-inner-content">
+                                <ul>
+                                    <li>
+                                        <a href=""><h5>Summer Last Results</h5></a>
+                                        <span><i class="fa fa-calendar"></i> January 20, 2018</span>
+                                    </li>
+                                    <li>
+                                        <a href=""><h5>College Campus</h5></a>
+                                        <span><i class="fa fa-calendar"></i> January 21, 2018</span>
+                                    </li>
+                                    <li>
+                                        <a href=""><h5>Wondering How To Make Your Project Rock</h5></a>
+                                        <span><i class="fa fa-calendar"></i> January 22, 2018</span>
+                                    </li>
+                                    <li>
+                                        <a href=""><h5>Our Admission Quary</h5></a>
+                                        <span><i class="fa fa-calendar"></i> January 23, 2018</span>
+                                    </li>
+                                    <li>
+                                        <a href=""><h5>Education Needs For Better Life</h5></a>
+                                        <span><i class="fa fa-calendar"></i> January 24, 2018</span>
+                                    </li>
+                                </ul>
+                                <a class="btn btn-base" href="" class="read-more"> See All Notice </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!--
+        |========================
+        |  Join
+        |========================
+        -->
+        <section class="uv-join bg-2">
+            <div class="container">
+                <div class="section-separator">
+                    <div class="uv-join-inner image-bg" style="background-image: url({% static 'assets/images/join-bg.jpg'%});">
+                        <div class="join-content wow fadeIn" data-wow-delay="0.2s">
+                            <span>Click to Apply Now for Details</span>
+                            <h3>Summer Admission is Going on</h3>
+                            <div class="join-btn">
+                                <a href="" class="btn btn-base">Apply Now</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!--
+        |========================
+        |      Course
+        |========================
+        -->
+        <section class="uv-course image-bg" style="background-image: url({% static 'assets/images/course-bg.jpg'%});">
+            <div class="overlay">
+                <div class="container">
+                    <div class="row section-separator">
+                        <div class="section-title col-xs-12 wow fadeIn" data-wow-delay="0.2s">
+                            <h2>Our Courses</h2>
+                            <span>The Best In Our School</span>
+                        </div>
+                        <div class="each-courses col-xs-12 wow fadeIn" id="uv-carousel" data-wow-delay="0.3s">
+                            <div class="item">
+                                <div class="course-inner">
+                                    <div class="course-banner">
+                                        <img src="{% static 'assets/images/c3.jpg'%}" alt="" class="img-responsive">
+                                    </div>
+                                    <div class="course-content">
+                                        <h4>Computer Science and Engineering</h4>
+                                        <p>Labore et dolore magna aliqua. Ut enim ad minim veniam,
+                                        quis nostrud exercitation ullamco laboris nisi ut aliquip ex
+                                        ea commodo.</p>
+                                         <a href="" class="btn btn-base">Apply Now</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="item">
+                                <div class="course-inner">
+                                    <div class="course-banner">
+                                        <img src="{% static 'assets/images/c2.jpg'%}" alt="" class="img-responsive">
+                                    </div>
+                                    <div class="course-content">
+                                        <h4>Design and Innovation Management</h4>
+                                        <p>Labore et dolore magna aliqua. Ut enim ad minim veniam,
+                                        quis nostrud exercitation ullamco laboris nisi ut aliquip ex
+                                        ea commodo.</p>
+                                         <a href="" class="btn btn-base">Apply Now</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="item">
+                                <div class="course-inner">
+                                    <div class="course-banner">
+                                        <img src="{% static 'assets/images/c1.jpg'%}" alt="" class="img-responsive">
+                                    </div>
+                                    <div class="course-content">
+                                        <h4>Fashion, Product and Interior Design</h4>
+                                        <p>Labore et dolore magna aliqua. Ut enim ad minim veniam,
+                                        quis nostrud exercitation ullamco laboris nisi ut aliquip ex
+                                        ea commodo.</p>
+                                         <a href="" class="btn btn-base">Apply Now</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="uv-event">
+            <div class="container">
+                <div class="row section-separator">
+                    <div class="section-title col-xs-12 wow fadeIn" data-wow-delay="0.2s">
+                        <h2>Events</h2>
+                        <span>Upcoming Education Events to feed your brain</span>
+                        <hr class="uv-hr">
+                        <a href="" class="btn btn-base view-full-event"> View All</a>
+                    </div>
+                    <div class="uv-each-events col-xs-12">
+                        <ul>
+                            <!-- Event list-->
+                            <li class="wow fadeInUp" data-wow-delay="0.2s">
+                                <div class="col-sm-3">
+                                    <div class="uv-event-date">
+                                        <h3>15</h3>
+                                        <span>April</span>
+                                    </div>
+                                </div>
+                                <div class="col-sm-6">
+                                    <div class="uv-event-content">
+                                        <a href=""><h4>How to Become Successful</h4></a>
+                                        <div class="schedule">
+                                            <span class="uv-event-time"><i class="fa fa-clock-o main-color"></i> 10:00 am - 11:00am</span>
+                                            <span class="uv-event-place"><i class="fa fa-map-marker main-color"></i> los angeles</span>
+                                        </div>
+                                        <p>Morbi accumsan ipsum velit. Nam nec tellus a odio tincidunt
+                                        auctor a ornare odio. Sed non mauris itae erat conuat</p>
+                                    </div>
+                                </div>
+                                <div class="col-sm-3">
+                                    <img src="{% static 'assets/images/ev1.jpg'%}" alt="" class="img-responsive">
+                                </div>
+                            </li>
+                            <!-- Event list-->
+                            <li class="wow fadeInUp" data-wow-delay="0.4s">
+                                <div class="col-sm-3">
+                                    <div class="uv-event-date">
+                                        <h3>10</h3>
+                                        <span>March</span>
+                                    </div>
+                                </div>
+                                <div class="col-sm-6">
+                                    <div class="uv-event-content">
+                                        <a href=""><h4>How to Find a College That Fits You</h4></a>
+                                        <div class="schedule">
+                                            <span class="uv-event-time"><i class="fa fa-clock-o main-color"></i> 02:00 pm - 05:00pm</span>
+                                            <span class="uv-event-place"><i class="fa fa-map-marker main-color"></i> California</span>
+                                        </div>
+                                        <p>Morbi accumsan ipsum velit. Nam nec tellus a odio tincidunt
+                                        auctor a ornare odio. Sed non mauris itae erat conuat</p>
+                                    </div>
+                                </div>
+                                <div class="col-sm-3">
+                                    <img src="{% static 'assets/images/ev2.jpg'%}" alt="" class="img-responsive">
+                                </div>
+                            </li>
+                            <!-- Event list-->
+                            <li class="wow fadeInUp" data-wow-delay="0.6s">
+                                <div class="col-sm-3">
+                                    <div class="uv-event-date">
+                                        <h3>23</h3>
+                                        <span>April</span>
+                                    </div>
+                                </div>
+                                <div class="col-sm-6">
+                                    <div class="uv-event-content">
+                                        <a href=""><h4>The Right High School: Myth Versus Reality</h4></a>
+                                        <div class="schedule">
+                                            <span class="uv-event-time"><i class="fa fa-clock-o main-color"></i> 12:00 am - 01:00pm</span>
+                                            <span class="uv-event-place"><i class="fa fa-map-marker main-color"></i> New York</span>
+                                        </div>
+                                        <p>Morbi accumsan ipsum velit. Nam nec tellus a odio tincidunt
+                                        auctor a ornare odio. Sed non mauris itae erat conuat</p>
+                                    </div>
+                                </div>
+                                <div class="col-sm-3">
+                                    <img src="{% static 'assets/images/ev3.jpg'%}" alt="" class="img-responsive">
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!--
+        |========================
+        |  video
+        |========================
+        -->
+        <section class="uv-video image-bg" style="background-image: url({% static 'assets/images/video-bg.jpg'%});">
+            <div class="overlay">
+                <div class="container">
+                    <div class="row section-separator wow fadeIn" data-wow-delay="0.2s">
+                        <h2>Curricular Campus Tour</h2>
+                        <div class="button">
+                            <a data-fancybox href="//www.youtube.com/watch?v=n9EUqIoBJXA"><i class="fa flaticon-play-button"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!--
+        |========================
+        |  blog 1
+        |========================
+        -->
+        <section class="uv-blog">
+            <div class="container">
+                <div class="row section-separator">
+                    <div class="section-title wow fadeIn col-xs-12" data-wow-delay="0.2s">
+                        <h2>Blog Posts</h2>
+                        <span>Education blog to feed your brain</span>
+                        <hr class="uv-hr">
+                        <a href="" class="btn btn-base view-full-event"> View All</a>
+                    </div>
+                    <div class="each-blogs col-xs-12 wow fadeIn" data-wow-delay="0.3s" id="uv-blog-carousel">
+                        <div class="item">
+                            <div class="blog-inner">
+                                <div class="blog-banner">
+                                    <img src="{% static 'assets/images/b1.jpg'%}" alt="" class="img-responsive">
+                                </div>
+                                <div class="blog-content">
+                                    <h4>10 Reasons Why Postgraduate Study Might Be Right For You</h4>
+                                    <div class="blog-schedule">
+                                        <a href=""><h4>10 Reasons Why Postgraduate Study Might Be Right For You</h4></a>
+                                        <div class="blog-meta">
+                                            <span><i class="fa fa-calendar-o"></i> January 15, 2018</span>
+                                        </div>
+                                        <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="item">
+                            <div class="blog-inner">
+                                <div class="blog-banner">
+                                    <img src="{% static 'assets/images/b2.jpg'%}" alt="" class="img-responsive">
+                                </div>
+                                <div class="blog-content">
+                                    <h4>10 of the Best Student Blogs for Millennial Life</h4>
+                                    <div class="blog-schedule">
+                                        <a href=""><h4>10 of the Best Student Blogs for Millennial Life</h4></a>
+                                        <div class="blog-meta">
+                                            <span><i class="fa fa-calendar-o"></i> January 25, 2018</span>
+                                        </div>
+                                        <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="item">
+                            <div class="blog-inner">
+                                <div class="blog-banner">
+                                    <img src="{% static 'assets/images/b1.jpg'%}" alt="" class="img-responsive">
+                                </div>
+                                <div class="blog-content">
+                                    <h4>Why Your Choice Of Verb Helps You Evaluate A Text</h4>
+                                    <div class="blog-schedule">
+                                        <a href=""><h4>Why Your Choice Of Verb Helps You Evaluate A Text</h4></a>
+                                        <div class="blog-meta">
+                                            <span><i class="fa fa-calendar-o"></i> January 29, 2018</span>
+                                        </div>
+                                        <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!--
+        |========================
+        |  testimonial
+        |========================
+        -->
+        <section class="section uv-testimonial image-bg" id="uv-testimonial" style="background-image: url(assets/images/ts-bg.jpg);">
+            <div class="overlay">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-xs-12 client-quates">
+                            <div class="uv-client-testimonial">
+                                <div class="slider-content wow">
+                                    <div class="carousel uv-carousel-fade slide" data-ride="carousel" id="quote-carousel">
+                                        <div class="carousel-inner text-center">
+                                            <!-- Quote 1 -->
+                                            <div class="item active">
+                                                <blockquote>
+                                                    <div class="row">
+                                                        <div class="uv-client-quates">
+                                                            <h3>Sam Andro</h3>
+                                                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore</p>
+                                                        </div>
+                                                    </div>
+                                                </blockquote>
+                                            </div>
+                                            <!-- Quote 2 -->
+                                            <div class="item">
+                                                <blockquote>
+                                                    <div class="row">
+                                                        <div class="uv-client-quates">
+                                                            <h3>Linux Wlis</h3>
+                                                            <p>It is a long established fact that a reader will be distracted by the readable content of a page</p>
+                                                        </div>
+                                                    </div>
+                                                </blockquote>
+                                            </div>
+                                            <!-- Quote 3 -->
+                                            <div class="item">
+                                                <blockquote>
+                                                    <div class="row">
+                                                        <div class="uv-client-quates">
+                                                            <h3>Becky Rand</h3>
+                                                            <p>There are many variations of passages of Lorem Ipsum available, but the majority have suffered</p>
+                                                        </div>
+                                                    </div>
+                                                </blockquote>
+                                            </div>
+                                            <!-- Quote 4 -->
+                                            <div class="item">
+                                                <blockquote>
+                                                    <div class="row">
+                                                        <div class="uv-client-quates">
+                                                            <h3>Jenny</h3>
+                                                            <p>Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin</p>
+                                                        </div>
+                                                    </div>
+                                                </blockquote>
+                                            </div>
+                                        </div>
+                                        <!-- Bottom Carousel Indicators -->
+                                        <ol class="carousel-indicators uv-indicator">
+                                            <li data-target="#quote-carousel" data-slide-to="0" class="active"><img class="img-responsive " src="{% static 'assets/images/t3.jpg'%}" alt=""></li>
+                                            <li data-target="#quote-carousel" data-slide-to="1"><img class="img-responsive" src="{% static 'assets/images/t2.jpg'%}" alt=""></li>
+                                            <li data-target="#quote-carousel" data-slide-to="2"><img class="img-responsive" src="{% static 'assets/images/t1.jpg'%}" alt=""></li>
+                                            <li data-target="#quote-carousel" data-slide-to="3"><img class="img-responsive" src="{% static 'assets/images/student-1.png'%}" alt=""></li>
+                                        </ol>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+{% endblock %}
